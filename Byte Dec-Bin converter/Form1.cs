@@ -15,34 +15,70 @@ namespace Byte_Dec_Bin_converter
         public Form1()
         {
             InitializeComponent();
-            this.input.KeyPress += new KeyPressEventHandler(input_KeyPress);
         }
 
-        private void input_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            String AcceptedKeys = "0123456789";
-            if (!(AcceptedKeys.Contains(e.KeyChar.ToString())))
-            {
-                e.Handled = true;
-            }
-        }
+
 
         private void input_TextChanged(object sender, EventArgs e)
         {
-            int dec = int.Parse(input.Text);
-            if ((dec < 0) || (dec > 255))
+            String AcceptedKeys = "0123456789";
+            string validated = "";
+            foreach (char c in input.Text)
             {
-                MessageBox.Show("Invalid number - must be between 0 and 255.");
-                input.Text = input.Text.Substring(0, input.Text.Length - 1);
-                if (input.Text.Length > 0)
+                if (AcceptedKeys.Contains(c)) {
+                    validated += c;
+                }
+            }
+            input.Text = validated;
+            input.SelectionStart = input.Text.Length;
+            input.SelectionLength = 0;
+
+            if (input.Text != "")
+            {
+                int dec = int.Parse(input.Text);
+                if ((dec < 0) || (dec > 255))
                 {
+                    MessageBox.Show("Invalid number - must be between 0 and 255.");
+                    input.Text = input.Text.Substring(0, input.Text.Length - 1);
                     input.SelectionStart = input.Text.Length;
                     input.SelectionLength = 0;
                 }
+                else
+                {
+                    int current = 128;
+                    string bin = "";
+                    do
+                    {
+                        if (dec >= current)
+                        {
+                            bin = 1 + bin;
+                            dec = (dec - current);
+                        }
+                        else
+                        {
+                            bin = 0 + bin;
+                        }
+
+                        if (current == 1)
+                        {
+                            current = 0;
+                        }
+                        else
+                        {
+                            current = (current / 2);
+                        }
+
+                    } while (current > 0);
+
+                    output.Text = bin;
+                }
             }else
             {
-
+                output.Text = "";
             }
+
+
+            
         }
     }
 }
