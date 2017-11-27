@@ -1,0 +1,9 @@
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\bin\Debug\Byte Dec-Bin converter.exe.config
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\bin\Debug\Byte Dec-Bin converter.exe
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\bin\Debug\Byte Dec-Bin converter.pdb
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte Dec-Bin converter.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte_Dec_Bin_converter.Form1.resources
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte_Dec_Bin_converter.Properties.Resources.resources
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte Dec-Bin converter.csproj.GenerateResource.Cache
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte Dec-Bin converter.exe
+C:\Users\Brian\Repos\Byte Dec-Bin converter\Byte Dec-Bin converter\Byte Dec-Bin converter\obj\Debug\Byte Dec-Bin converter.pdb
