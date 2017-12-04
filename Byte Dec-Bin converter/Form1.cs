@@ -59,16 +59,9 @@ namespace Byte_Dec_Bin_converter
                             bin = 0 + bin;
                         }
 
-                        if (current == 1)
-                        {
-                            current = 0;
-                        }
-                        else
-                        {
-                            current = (current / 2);
-                        }
+                        current = (current / 2);
 
-                    } while (current > 0);
+                    } while (current > 0.5);
 
                     output.Text = bin;
                 }
